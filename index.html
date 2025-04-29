@@ -4,9 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tecnotravel Marano</title>
+
+    <!-- ✅ Meta tag per anteprima link su WhatsApp/Facebook -->
+    <meta property="og:title" content="Promessa di Matrimonio - Raffaele & Nicoletta 💍">
+    <meta property="og:description" content="Un piccolo grande gesto per accompagnarci nella nostra avventura ✈️ Grazie di cuore! 💖">
+    <meta property="og:image" content="https://promessaraffaelenicoletta.github.io/9/cover.jpg">
+    <meta property="og:url" content="https://promessaraffaelenicoletta.github.io/9/">
+    <meta property="og:type" content="website">
+
+    <!-- Font & CSS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
     <style>
         :root {
             --primary-color: #2c3e50;
@@ -35,12 +45,8 @@
         }
 
         @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
 
         #content {
@@ -50,14 +56,8 @@
         }
 
         @keyframes fadeInContent {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
         }
 
         .container {
@@ -295,7 +295,7 @@
 
         <main class="container">
             <section class="description-section">
-                <p>Per chi desidera contribuire a questo momento speciale, abbiamo affidato i nostri sogni all'agenzia che ci accompagnerà in questa avventura. Trovate qui sotto tutte le informazioni per mandare un piccolo grande gesto che porteremo con noi in valigia. Grazie di cuore!</p>
+                <p>Per chi desidera contribuire a questo momento speciale, abbiamo affidato i nostri sogni all'agenzia che ci accompagnerà in questa avventura. Trovate qui sotto tutte le informazioni per mandare un piccolo grande gesto che porteremo con noi in valigia. Grazie di cuore! 💖✈️</p>
             </section>
 
             <section>
@@ -329,7 +329,7 @@
         function copyToClipboard() {
             const iban = document.getElementById('iban');
             const button = document.querySelector('.copy-btn');
-            
+
             navigator.clipboard.writeText(iban.textContent).then(() => {
                 button.textContent = 'Copiato!';
                 setTimeout(() => {
@@ -341,4 +341,4 @@
         }
     </script>
 </body>
-</html> 
+</html>
